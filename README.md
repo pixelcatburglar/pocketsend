@@ -1,7 +1,7 @@
 # Pocket Send
 
 A small native Rust app for sending local files to a Nintendo 3DS running [FTPD](https://github.com/mtheall/ftpd). No browser runtime or account required.
-
+<img width="813" height="594" alt="image" src="https://github.com/user-attachments/assets/b0d48127-8c3e-4664-8d2f-4239b9fb423e" />
 ## Use it
 
 On Windows, open `dist/pocket-send.exe`.
