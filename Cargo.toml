@@ -1,0 +1,22 @@
+[package]
+name = "pocket-send"
+version = "0.1.0"
+edition = "2024"
+description = "A small, focused FTP companion for your Nintendo 3DS"
+license = "MIT"
+
+[dependencies]
+anyhow = "1"
+eframe = { version = "0.36.2", default-features = false, features = ["default_fonts", "glow", "persistence", "accesskit", "wayland", "x11"] }
+rfd = "0.17.2"
+serde = { version = "1", features = ["derive"] }
+suppaftp = { version = "12.1.1", default-features = false }
+
+[profile.release]
+opt-level = "s"
+lto = "thin"
+codegen-units = 1
+strip = true
+
+[features]
+screenshot = ["eframe/__screenshot"]
